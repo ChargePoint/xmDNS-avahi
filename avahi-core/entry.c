@@ -62,6 +62,7 @@ static void transport_flags_from_domain(AvahiServer *s, AvahiPublishFlags *flags
     if (!s->wide_area_lookup_engine ||
         !avahi_wide_area_has_servers(s->wide_area_lookup_engine) ||
         avahi_domain_ends_with(domain, AVAHI_MDNS_SUFFIX_LOCAL) ||
+        avahi_domain_ends_with(domain, AVAHI_MDNS_SUFFIX_SITE) ||
         avahi_domain_ends_with(domain, AVAHI_MDNS_SUFFIX_ADDR_IPV4) ||
         avahi_domain_ends_with(domain, AVAHI_MDNS_SUFFIX_ADDR_IPV6))
         *flags |= AVAHI_PUBLISH_USE_MULTICAST;

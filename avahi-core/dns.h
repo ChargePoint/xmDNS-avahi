@@ -104,6 +104,7 @@ size_t avahi_dns_packet_space(AvahiDnsPacket *p);
          ((uint16_t) (rcode & 15)))
 
 #define AVAHI_MDNS_SUFFIX_LOCAL "local"
+#define AVAHI_MDNS_SUFFIX_SITE "site"
 #define AVAHI_MDNS_SUFFIX_ADDR_IPV4 "254.169.in-addr.arpa"
 #define AVAHI_MDNS_SUFFIX_ADDR_IPV6 "0.8.e.f.ip6.arpa"
 
