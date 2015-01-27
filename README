@@ -1,10 +1,7 @@
-The changes made to Avahi are an attempt to transform it into an
-xmDNS server as described here:
-
+The changes made to Avahi are an attempt to add support for xmDNS, described
 here: http://tools.ietf.org/html/draft-lynn-dnsext-site-mdns-01
 
-Why would you want to do that?  One reason is that
-xmDNS is required in order to implement SEP 2.0 - Smart Energy Profile
+xmDNS is required in the implementation of SEP 2.0 - Smart Energy Profile
 protocol.
 
 These changes are incomplete but sufficient to meet the xmDNS spec
@@ -13,7 +10,7 @@ a single site.
 
 Modifications:
 
-- Multicast address changed to `ff05::fb` (No longer works as an mDNS server!!) 
+- Multicast address changed to ff05::fb
 - Partial support added for .site domain -- enough to make it work.
 
 

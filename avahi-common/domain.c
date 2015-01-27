@@ -263,7 +263,7 @@ int avahi_is_valid_service_type_generic(const char *t) {
         if (!(avahi_unescape_label(&t, label, sizeof(label))))
             return 0;
 
-        if (strlen(label) <= 2 || label[0] != '_')
+        if (strlen(label) <= 2)
             return 0;
 
     } while (*t);
@@ -283,7 +283,7 @@ int avahi_is_valid_service_type_strict(const char *t) {
     if (!(avahi_unescape_label(&t, label, sizeof(label))))
         return 0;
 
-    if (strlen(label) <= 2 || label[0] != '_')
+    if (strlen(label) <= 2)
         return 0;
 
     if (!*t)
@@ -316,7 +316,7 @@ const char *avahi_get_type_from_subtype(const char *t) {
     if (!(avahi_unescape_label(&t, label, sizeof(label))))
         return NULL;
 
-    if (strlen(label) <= 2 || label[0] != '_')
+    if (strlen(label) <= 2)
         return NULL;
 
     if (!*t)

@@ -26,7 +26,9 @@
 
 #define AVAHI_MDNS_PORT 5353
 #define AVAHI_DNS_PORT 53
-#define AVAHI_IPV4_MCAST_GROUP "224.0.0.251"
+// #define AVAHI_IPV4_MCAST_GROUP "224.0.0.251"
+#define AVAHI_IPV4_MCAST_GROUP "239.255.255.251"
+// #define AVAHI_IPV6_MCAST_GROUP "ff02::fb"
 #define AVAHI_IPV6_MCAST_GROUP "ff05::fb"
 
 int avahi_open_socket_ipv4(int no_reuse);
